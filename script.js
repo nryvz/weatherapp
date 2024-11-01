@@ -31,7 +31,7 @@ function displayWeather(data) {
     const forecastContainer = document.getElementById('weather-result');
     forecastContainer.innerHTML = '';
 
-    // Her gün için bir hava durumu kartı gösterelim (8 tane üç saatlik tahmin = yaklaşık 1 gün)
+  
     for (let i = 0; i < data.list.length; i += 8) {
         const forecast = data.list[i];
         const date = new Date(forecast.dt * 1000).toLocaleDateString();
